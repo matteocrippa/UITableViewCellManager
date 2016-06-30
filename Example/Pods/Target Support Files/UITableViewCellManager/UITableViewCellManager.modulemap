@@ -1,0 +1,6 @@
+framework module UITableViewCellManager {
+  umbrella header "UITableViewCellManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

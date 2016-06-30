@@ -1,0 +1,16 @@
+PODS:
+  - UITableViewCellManager (0.1.0)
+
+DEPENDENCIES:
+  - UITableViewCellManager (from `../`)
+
+EXTERNAL SOURCES:
+  UITableViewCellManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UITableViewCellManager: 001eb3658ff3821aeb036f491bdc7d75265bcff0
+
+PODFILE CHECKSUM: 0a484862c0ad102a616f32648ff3b261b5ffcd41
+
+COCOAPODS: 1.0.1

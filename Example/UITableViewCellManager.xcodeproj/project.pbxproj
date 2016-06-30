@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		66AF7ED5016FBF3D59FF6F97 /* Pods_UITableViewCellManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFB4B1EC0C0CB24D7A49650 /* Pods_UITableViewCellManager_Example.framework */; };
+		FAC6690D1D25747C00EBC742 /* MyCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6690C1D25747C00EBC742 /* MyCellType.swift */; };
+		FAC669111D25758700EBC742 /* NibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC6690F1D25758700EBC742 /* NibTableViewCell.swift */; };
+		FAC669121D25758700EBC742 /* NibTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC669101D25758700EBC742 /* NibTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		E3E0556671B03866E0A7D150 /* UITableViewCellManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UITableViewCellManager.podspec; path = ../UITableViewCellManager.podspec; sourceTree = "<group>"; };
+		FAC6690C1D25747C00EBC742 /* MyCellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellType.swift; sourceTree = "<group>"; };
+		FAC6690F1D25758700EBC742 /* NibTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibTableViewCell.swift; sourceTree = "<group>"; };
+		FAC669101D25758700EBC742 /* NibTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,10 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FAC6690C1D25747C00EBC742 /* MyCellType.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				FAC6690F1D25758700EBC742 /* NibTableViewCell.swift */,
+				FAC669101D25758700EBC742 /* NibTableViewCell.xib */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -247,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				FAC669121D25758700EBC742 /* NibTableViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -360,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				FAC669111D25758700EBC742 /* NibTableViewCell.swift in Sources */,
+				FAC6690D1D25747C00EBC742 /* MyCellType.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
