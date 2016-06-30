@@ -60,6 +60,8 @@ extension ViewController: UITableViewDelegate {
             return tableView.setUICell(cellType, object: "Cell loaded from nib !")
 
         }
+        
+        tableView.createCell(<#T##cellType: UITableViewCellStructureDataSource##UITableViewCellStructureDataSource#>)
 
         return UITableViewCell()
 
