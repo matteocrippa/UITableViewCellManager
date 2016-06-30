@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UITableViewCellManager_Example' do
+  pod 'UITableViewCellManager', :path => '../'
+
+  target 'UITableViewCellManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
