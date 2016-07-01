@@ -29,6 +29,7 @@ UITableViewCellManager is a collection of usefull functions for manage your UITa
   # s.social_media_url = 'https://twitter.com/corlaonline'
 
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'UITableViewCellManager/Classes/**/*'
   
