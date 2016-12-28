@@ -17,13 +17,13 @@ class NibTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    override func setUI(object: AnyObject?) {
+    override func setUI(_ object: Any?) {
         
         guard let text = object as? String else { return }
      

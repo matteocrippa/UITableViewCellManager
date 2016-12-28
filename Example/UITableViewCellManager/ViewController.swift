@@ -35,7 +35,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return elements.count
 
@@ -45,7 +45,7 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard indexPath.row < elements.count else { return UITableViewCell() }
 
@@ -57,13 +57,11 @@ extension ViewController: UITableViewDelegate {
 
         } else if cellType == MyCellType.nibCell {
 
-            return tableView.setUICell(cellType, object: "Cell loaded from nib !")
+            return tableView.setUICell(cellType, object: "Cell loaded from nib!")
 
         }
-        
-        tableView.createCell(<#T##cellType: UITableViewCellStructureDataSource##UITableViewCellStructureDataSource#>)
 
-        return UITableViewCell()
+        return tableView.createCell(cellType)
 
     }
 

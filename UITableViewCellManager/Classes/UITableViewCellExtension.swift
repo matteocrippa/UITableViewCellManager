@@ -8,8 +8,8 @@
 
 import UIKit
 
-public extension UITableViewCell {
+extension UITableViewCell {
 
-    public func setUI(object: AnyObject? = nil) {}
+    open func setUI(_ object: Any? = nil) {}
 
 }
