@@ -10,15 +10,15 @@ import UIKit
 
 public extension UITableView {
 
-    public func createCell<T: UITableViewCell>(cellType: UITableViewCellStructureDataSource) -> T {
+    public func createCell<T: UITableViewCell>(_ cellType: UITableViewCellStructureDataSource) -> T {
 
         if let nib = cellType.cellStructure.nib {
 
-            self.registerNib(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: cellType.cellStructure.identifier)
+            self.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: cellType.cellStructure.identifier)
 
         }
 
-        if let cell = self.dequeueReusableCellWithIdentifier(cellType.cellStructure.identifier) as? T {
+        if let cell = self.dequeueReusableCell(withIdentifier: cellType.cellStructure.identifier) as? T {
 
             return cell
 
@@ -26,7 +26,7 @@ public extension UITableView {
 
     }
 
-    public func setUICell<T: UITableViewCell>(cellType: UITableViewCellStructureDataSource, object: AnyObject? = nil) -> T {
+    public func setUICell<T: UITableViewCell>(_ cellType: UITableViewCellStructureDataSource, object: Any? = nil) -> T {
 
         let cell = self.createCell(cellType) as T
         cell.setUI(object)
