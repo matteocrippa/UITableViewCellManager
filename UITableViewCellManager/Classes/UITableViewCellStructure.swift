@@ -29,3 +29,26 @@ public struct UITableViewCellStructure {
     }
 
 }
+
+public protocol UICollectionViewCellStructureDataSource {
+    
+    var cellStructure: UICollectionViewCellStructure { get }
+    
+}
+
+public struct UICollectionViewCellStructure {
+    
+    public var type: UICollectionViewCell
+    public var identifier: String
+    public var nib: String?
+    
+    public init(type: UICollectionViewCell, identifier: String, nib: String? = nil) {
+        
+        self.type = type
+        self.identifier = identifier
+        self.nib = nib
+        
+    }
+    
+}
+

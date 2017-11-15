@@ -36,3 +36,33 @@ public extension UITableView {
     }
 
 }
+
+public extension UICollectionView {
+    
+    public func createCell<T: UICollectionViewCell>(_ cellType: UICollectionViewCellStructureDataSource, indexPath: IndexPath) -> T {
+        
+        if let nib = cellType.cellStructure.nib {
+            
+            self.register(UINib(nibName: nib, bundle: nil), forCellWithReuseIdentifier: cellType.cellStructure.identifier)
+            
+        }
+        
+        if let cell = self.dequeueReusableCell(withReuseIdentifier: cellType.cellStructure.identifier, for: indexPath) as? T {
+            
+            return cell
+            
+        } else { return T() }
+        
+    }
+    
+    public func setUICell<T: UICollectionViewCell>(_ cellType: UICollectionViewCellStructureDataSource, indexPath: IndexPath, object: Any? = nil) -> T {
+        
+        let cell = self.createCell(cellType, indexPath: indexPath) as T
+        cell.setUI(object)
+        
+        return cell
+        
+    }
+    
+}
+

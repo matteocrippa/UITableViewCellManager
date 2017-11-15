@@ -13,3 +13,9 @@ extension UITableViewCell {
     open func setUI(_ object: Any? = nil) {}
 
 }
+
+extension UICollectionViewCell {
+    
+    open func setUI(_ object: Any? = nil) {}
+    
+}
